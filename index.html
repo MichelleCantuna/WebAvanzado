@@ -8,23 +8,91 @@
 </head>
 <body>
     
-    <header> <!--Michu-->
-        <!--
-            AQUI VA EL MENU
-            -INICIO
-            -PLANES
-                + Home Basic
-                + Home Mid
-                + Home Plus
-            -Comunidad
-                + Blog
-                + Sorteos
-            -Atencion al cliente
-                - Contactanos
-                - Servicio Tecnico
-        -->
+    <header> 
+        <title>Menu Desplegable</title>
+		<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:rgb(63, 48, 137);
+				color:#fff;
+				text-decoration:none;
+				padding:10px 10px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	
     </header>
+	<div id="header">
+        <ul class="nav">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Planes</a>
+                <ul>
+                    <li><a href="">Home Basic</a></li>
+                    <li><a href="">Home Mid</a></li>
+                    <li><a href="">Home Plus</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li><a href="">Comunidad</a>
+                <ul>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Sorteos</a></li>
+                </ul>
+            </li>
 
+            <li><a href="">Atención al cliente</a>
+                <ul>
+                    <li><a href="">Contáctanos</a></li>
+                    <li><a href="">Servicio Técnico</a></li>
+                </ul>
+            </li>
+            <li><a href="">Iniciar Sesión</a></li>
+        </ul>
+    </div>
     <section>
         <!-- esto es mi parte -->
     </section>
